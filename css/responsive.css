@@ -24,7 +24,6 @@ h1, h2, h3{
 #info{
     background-color: #5385b8;
     color: #fff;
-    overflow-y: auto;
 }
 
 #info-header{
@@ -56,6 +55,7 @@ h1, h2, h3{
     margin: 0;
     position: relative;
     display: block;
+    font-weight: bold;
 }
 
 #info-banner{
@@ -70,10 +70,6 @@ h1, h2, h3{
     padding: 10px 25px;
 }
 
-#info-body #info-line{
-    display: none;
-}
-
 .info-text{
     margin: 10px auto;
 }
@@ -84,16 +80,13 @@ h1, h2, h3{
     font-size: 30px;
 }
 
-#info-footer{
-    display: none;
-}
-
-#main-header, #main-banner{
-    display: none;
+#main{
+    display: block;
+    text-align: center;
+    border: 5px solid #5385b8;
 }
 
 .main-body{
-    float: none;
     display: block;
     padding: 5px 25px;
     margin: 20px auto;
@@ -110,17 +103,8 @@ h1, h2, h3{
 }
 
 #main-footer{
+    text-align: left;
     background-color: #5385b8;
-}
-
-.col{
-    float: none;
-    display: block;
-    width: auto;
-    overflow-y: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;    
 }
 
 .footer{
@@ -168,151 +152,61 @@ h1, h2, h3{
 
 @media only screen and (min-width:768px){
     #container{
-        display: flex;
-        display: -webkit-flex;
         max-height: 100%;
-    }
-
-    .col{
-        display: inline;
-    }
-
-    #info{
-        width: 40%;
-        position: fixed;
-    }
-
-    #info-header{
-        height: 350px;
-        background: none;
-    }
-
-    #info-header .caption{
-        margin: 10px;
-        top: 0;   
+        display: block;
     }
     
     #info-header .caption h2{
         font-size: 75px;
     }
 
-    #info-banner{
-        display: none;
-    }
-
-    #info-body #info-line{
-        height: 5px;
-        color: #7fc6e6;
-    }
-
-    #info-footer{
-        display: block;
-    }
-
-    #info-footer address{
-        display: block;
-    }
-
-    #info-footer address .addr_1{
-        margin-right: 0;
-    }
-    
-    #main{
-        width: 60%;
-        margin-left: 40%;
-        overflow-y: scroll;
-    }
-
-    #main-header{
-        width: 100%;
-        height: 400px;
-        display: block;
-        position: relative;
-        background: url('../images/house.jpg') no-repeat bottom center;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        line-height: 1 !important;
-    }
-
-    #main-banner{
-        display: block;
-        padding: 10px;
-        text-align: center;
-        font-family: "Dancing Script", cursive;
-    }
-
-    .main-body, .main-body .text{
-        text-align: left;
-    }
-
-    #main-footer{
-        display: none;
+    #main-footer address .addr_1{
+        margin-right: 35%;
     }
 }
 
 @media only screen and (min-width:960px){
-    #info-header{
-        height: 250px;
+    #info-header .caption{
+        padding: 0 4%; 
+    }
+
+    #main{
+        text-align: center;
+    }
+
+    .main-body{
+        display: inline-block;
+        padding: 5px 15px;
+        margin: 10px auto;
     }
 
     .main-body, .main-body .text{
-        text-align: center;
-    }
+        text-align: left;
+    }    
 }
 
 @media only screen and (min-width:1200px){
-    .main-body{
+    #container{
+        font-size: 17px;
+    }
+
+    #info-body{
+        margin: 0 15%;
+    }
+    #main-footer address{
         display: flex;
         display: -webkit-flex;
     }
 
-    .main-body .image{
-        width: 55%;
+    #main-footer address .addr_1{
+        position: relative;
+        left: 25%;
     }
-
-    .main-body .right{
-        order: 2;
-    }
-
-    .main-body .text{
-        width: 45%;
-        text-align: left;
-    }
-    
 }
 
 @media only screen and (min-width:1500px){
     #info-header .caption h2{
         font-size: 85px;
     }
-
-    #info-footer address{
-        display: flex;
-        display: -webkit-flex;
-    }
-
-    #info-footer address .addr_1{
-        margin-right: 15%;
-    }  
-
-    #info-footer .crights{
-        text-align: center;
-    }
 }
   
-
-  
-
-  
-  
-
-  
-  
- 
-  
-
-  
-
-
