@@ -1,0 +1,318 @@
+/*  Fonts  */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato&display=swap');
+
+
+/* General CSS */
+body{
+    background: #fff;
+    font-size: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a{
+    color: #7fc6e6 !important;
+}
+
+h1, h2, h3{
+    margin: 0 !important;
+}
+
+#container{
+    height: 100%;
+}
+
+#info{
+    background-color: #5385b8;
+    color: #fff;
+    overflow-y: auto;
+}
+
+#info-header{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background: url('../images/house.jpg') no-repeat bottom center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    line-height: 1 !important;
+}
+
+#info-header .caption{
+    width: 92.73%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    margin: -85px 4% 0;
+    z-index: 10;
+}
+
+#info-header .caption h2{
+    font-size: 75px;
+    color: #fff;
+    font-family: "Dancing Script", cursive;
+    font-weight: lighter;
+    margin: 0;
+    position: relative;
+    display: block;
+}
+
+#info-banner{
+    background-color: #fff !important;
+    text-align: center;
+    padding: 10px 0;
+    color: #5385b8;
+    font-size: 20px;
+}
+
+#info-body{
+    padding: 10px 25px;
+}
+
+#info-body #info-line{
+    display: none;
+}
+
+.info-text{
+    margin: 10px auto;
+}
+
+.info-text:first-of-type::first-letter{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#info-footer{
+    display: none;
+}
+
+#main-header, #main-banner{
+    display: none;
+}
+
+.main-body{
+    float: none;
+    display: block;
+    padding: 5px 25px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.main-body .text{
+    text-align: left;
+    margin-top: 10px;
+}
+
+.main-body div ul{
+    margin-left: 15px;
+}
+
+#main-footer{
+    background-color: #5385b8;
+}
+
+.col{
+    float: none;
+    display: block;
+    width: auto;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;    
+}
+
+.footer{
+    color: #fff;
+    padding: 10px 25px;
+}
+
+/*Responsive Design */
+@media only screen and (min-width:500px){
+    #info-header .caption h2{
+      font-size: 85px;
+    }
+
+    #info-banner h3{
+        font-size: 30px;
+    }
+
+    .main-body .text{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:610px){
+    #info-header .caption h2{
+        font-size: 95px;
+    }
+
+    #info-banner h3{
+        font-size: 35px;
+    }
+
+    #main-footer address{
+        display: flex;
+        display: -webkit-flex;
+    }
+
+    #main-footer address .addr_1{
+        margin-right: 20%;
+    }
+
+    #main-footer .crights{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:768px){
+    #container{
+        display: flex;
+        display: -webkit-flex;
+        max-height: 100%;
+    }
+
+    .col{
+        display: inline;
+    }
+
+    #info{
+        width: 40%;
+        position: fixed;
+    }
+
+    #info-header{
+        height: 350px;
+        background: none;
+    }
+
+    #info-header .caption{
+        margin: 10px;
+        top: 0;   
+    }
+    
+    #info-header .caption h2{
+        font-size: 75px;
+    }
+
+    #info-banner{
+        display: none;
+    }
+
+    #info-body #info-line{
+        height: 5px;
+        color: #7fc6e6;
+    }
+
+    #info-footer{
+        display: block;
+    }
+
+    #info-footer address{
+        display: block;
+    }
+
+    #info-footer address .addr_1{
+        margin-right: 0;
+    }
+    
+    #main{
+        width: 60%;
+        margin-left: 40%;
+        overflow-y: scroll;
+    }
+
+    #main-header{
+        width: 100%;
+        height: 400px;
+        display: block;
+        position: relative;
+        background: url('../images/house.jpg') no-repeat bottom center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        line-height: 1 !important;
+    }
+
+    #main-banner{
+        display: block;
+        padding: 10px;
+        text-align: center;
+        font-family: "Dancing Script", cursive;
+    }
+
+    .main-body, .main-body .text{
+        text-align: left;
+    }
+
+    #main-footer{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:960px){
+    #info-header{
+        height: 250px;
+    }
+
+    .main-body, .main-body .text{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .main-body{
+        display: flex;
+        display: -webkit-flex;
+    }
+
+    .main-body .image{
+        width: 55%;
+    }
+
+    .main-body .right{
+        order: 2;
+    }
+
+    .main-body .text{
+        width: 45%;
+        text-align: left;
+    }
+    
+}
+
+@media only screen and (min-width:1500px){
+    #info-header .caption h2{
+        font-size: 85px;
+    }
+
+    #info-footer address{
+        display: flex;
+        display: -webkit-flex;
+    }
+
+    #info-footer address .addr_1{
+        margin-right: 15%;
+    }  
+
+    #info-footer .crights{
+        text-align: center;
+    }
+}
+  
+
+  
+
+  
+  
+
+  
+  
+ 
+  
+
+  
+
+
