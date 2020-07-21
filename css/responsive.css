@@ -17,13 +17,21 @@ h1, h2, h3{
     margin: 0 !important;
 }
 
-#container{
-    height: 100%;
+
+#info-banner{
+    background-color: #5385b8;
+    text-align: center;
+    padding: 10px 0;
 }
 
-#info{
-    background-color: #5385b8;
+#info-banner h3{
     color: #fff;
+    font-size: 35px;
+    font-family: "Dancing Script", cursive;
+}
+
+#container{
+    height: 100%;
 }
 
 #info-header{
@@ -50,7 +58,6 @@ h1, h2, h3{
 #info-header .caption h2{
     font-size: 75px;
     color: #fff;
-    font-family: "Dancing Script", cursive;
     font-weight: lighter;
     margin: 0;
     position: relative;
@@ -58,12 +65,9 @@ h1, h2, h3{
     font-weight: bold;
 }
 
-#info-banner{
-    background-color: #fff !important;
-    text-align: center;
-    padding: 10px 0;
-    color: #5385b8;
-    font-size: 20px;
+#info{
+    background-color: #5385b8;
+    color: #fff;
 }
 
 #info-body{
@@ -118,10 +122,6 @@ h1, h2, h3{
       font-size: 85px;
     }
 
-    #info-banner h3{
-        font-size: 30px;
-    }
-
     .main-body .text{
         text-align: center;
     }
@@ -133,12 +133,13 @@ h1, h2, h3{
     }
 
     #info-banner h3{
-        font-size: 35px;
+        font-size: 40px;
     }
 
     #main-footer address{
         display: flex;
         display: -webkit-flex;
+        align-items: center;
     }
 
     #main-footer address .addr_1{
@@ -161,13 +162,31 @@ h1, h2, h3{
     }
 
     #main-footer address .addr_1{
-        margin-right: 35%;
+        margin-right: 25%;
+        margin-left: 5%;
     }
 }
 
 @media only screen and (min-width:960px){
+    #info-banner h3{
+        font-size: 45px;
+    }
+
     #info-header .caption{
         padding: 0 4%; 
+    }
+
+    #container{
+        position: relative;
+        background: url('../images/house.jpg') no-repeat bottom center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    
+    #page{
+        margin: auto 15%;
     }
 
     #main{
@@ -182,6 +201,11 @@ h1, h2, h3{
 
     .main-body, .main-body .text{
         text-align: left;
+    }
+
+    #main-footer address .addr_1{
+        margin-right: 25%;
+        margin-left: 14%;
     }    
 }
 
@@ -193,20 +217,21 @@ h1, h2, h3{
     #info-body{
         margin: 0 15%;
     }
-    #main-footer address{
-        display: flex;
-        display: -webkit-flex;
-    }
 
     #main-footer address .addr_1{
-        position: relative;
-        left: 25%;
-    }
+        margin-right: 30%;
+        margin-left: 15%;
+    }    
 }
 
 @media only screen and (min-width:1500px){
     #info-header .caption h2{
         font-size: 85px;
     }
+
+    #main-footer address .addr_1{
+        margin-right: 40%;
+        margin-left: 15%;
+    }    
 }
   
